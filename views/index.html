@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VibeCheck AI</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <div class="navbar">
+      <a href="/" style="font-size: 1.3rem">VibeCheck AI</a>
+      <div>
+        <a href="/logout">Logout</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>Welcome to VibeCheck AI 👋</h1>
+
+      <form id="sentiment-form">
+        <label for="text">Enter your message:</label>
+        <textarea
+          id="text"
+          placeholder="Type your message..."
+          rows="4"
+          required
+        ></textarea>
+        <button type="submit">Analyze</button>
+      </form>
+
+      <div id="results">
+        <h2>Your Analyses</h2>
+        <div id="history"></div>
+      </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
